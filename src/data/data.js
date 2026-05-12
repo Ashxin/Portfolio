@@ -1,0 +1,166 @@
+// data.js — Single source of truth for all portfolio content.
+// Components import from here. Never hardcode text in components.
+
+// ============================================================
+// PERSONAL INFO
+// ============================================================
+export const personalInfo = {
+  name: "Aswin Kumar B",
+  role: "ECE Engineer",          // shown under your name in About
+  email: "ashwinbta01@gmail.com",
+  github: "https://github.com/Ashxin",
+  linkedin: "https://linkedin.com/in/aswin-kumar-b",
+  phone: "9361543378",
+
+  // This is your headline — shown in Hero as typewriter text
+  // Each string in this array types out one after another
+  roles: [
+    "AI Systems Builder",
+    "Full Stack Developer",
+    "Edge AI Engineer",
+    "Workflow Automation Dev",
+  ],
+
+  // 2-3 sentences max. Punchy. No "I am passionate about..."
+  bio: "ECE fresher who builds real systems — from edge AI on Raspberry Pi to WhatsApp bots running on Docker. I sit at the intersection of hardware, web, and AI automation. I don't just write code; I ship things that work.",
+}
+
+// ============================================================
+// PROJECTS
+// ============================================================
+// Each project is an object with consistent fields.
+// "hero: true" means it gets a large featured card.
+// "hero: false" means it gets a smaller secondary card.
+
+export const projects = [
+  {
+    id: 1,
+    title: "WhatsApp Automation Suite",
+    tagline: "AI-powered order management for small manufacturers",
+    description:
+      "End-to-end WhatsApp automation system for school accessory manufacturers. An LLM parses unstructured messages, logs structured orders into Google Sheets, and auto-notifies customers on dispatch.",
+    // These metrics are the most important part of a hero project card.
+    // Numbers make impact concrete. Never skip these.
+    metrics: [
+      { label: "Response time", value: "Minutes → Seconds" },
+      { label: "LLM Model", value: "Llama 3.3 70B" },
+      { label: "Self-hosted", value: "Docker + n8n" },
+    ],
+    tech: ["n8n", "Groq API", "Twilio", "Google Sheets API", "Docker"],
+    github: null,       // no public repo for this one
+    live: null,
+    hero: true,         // featured card — large
+  },
+  {
+    id: 2,
+    title: "IoT Rubber Latex Monitor",
+    tagline: "Edge AI deployed on Raspberry Pi for plantation monitoring",
+    description:
+      "MobileNetV2 binary classifier deployed on Raspberry Pi 3 to monitor rubber latex cups. Built a hybrid SMS alerting system that cut per-alert cost by 75%. Collected 573 real field images to eliminate domain-shift issues.",
+    metrics: [
+      { label: "Accuracy", value: "95.45%" },
+      { label: "Alert cost", value: "₹2.00 → ₹0.50" },
+      { label: "Real images", value: "573 collected" },
+    ],
+    tech: ["Python", "TFLite", "MobileNetV2", "Raspberry Pi", "Twilio"],
+    github: "https://github.com/Ashxin/latex-cup-monitor",
+    live: null,
+    hero: true,         // featured card — large
+  },
+  {
+    id: 3,
+    title: "Notes App",
+    tagline: "Full-stack note-taking with real-time sync",
+    description:
+      "Firebase-backed notes app with authentication, real-time Firestore sync, CRUD operations, and session persistence.",
+    metrics: [],        // no standout metrics — secondary project
+    tech: ["JavaScript", "Firebase", "Firestore"],
+    github: "https://github.com/Ashxin/notes-app",
+    live: null,
+    hero: false,        // secondary card — small
+  },
+  {
+    id: 4,
+    title: "Weather Dashboard",
+    tagline: "Real-time weather with 5-day forecasting",
+    description:
+      "Weather dashboard using OpenWeatherMap API with async/await, 5-day forecast, saved cities via localStorage.",
+    metrics: [],
+    tech: ["JavaScript", "OpenWeatherMap API"],
+    github: "https://github.com/Ashxin/weatherDashboard",
+    live: null,
+    hero: false,
+  },
+]
+
+// ============================================================
+// SKILLS
+// ============================================================
+// Grouped by domain — not a flat list.
+// This grouping is what makes you look focused, not scattered.
+
+export const skills = [
+  {
+    category: "Web Development",
+    icon: "🌐",
+    items: ["JavaScript", "React", "HTML5", "CSS3", "Firebase"],
+  },
+  {
+    category: "AI & Automation",
+    icon: "🤖",
+    items: ["Python", "n8n", "Groq API", "TFLite", "MobileNetV2"],
+  },
+  {
+    category: "Infrastructure",
+    icon: "⚙️",
+    items: ["Docker", "Git", "SQL", "Vercel", "GitHub Pages"],
+  },
+  {
+    category: "Hardware & IoT",
+    icon: "🔌",
+    items: ["Raspberry Pi", "GSM800A", "Twilio", "Edge AI"],
+  },
+]
+
+// ============================================================
+// EXPERIENCE
+// ============================================================
+export const experience = [
+  {
+    id: 1,
+    role: "Web Development Intern",
+    company: "Codsoft",
+    duration: "June 2025 – July 2025",
+    type: "internship",   // used to show the right icon/badge
+    points: [
+      "Built a Marvel-themed responsive landing page using HTML5 and CSS3",
+      "Developed a personal portfolio website with smooth navigation",
+      "Implemented a browser-based calculator with keyboard input support",
+    ],
+  },
+]
+
+// ============================================================
+// EDUCATION
+// ============================================================
+export const education = [
+  {
+    id: 1,
+    degree: "B.E. Electronics and Communication Engineering",
+    institution: "Kumaraguru College of Technology",
+    duration: "Nov 2022 – May 2026",
+    cgpa: "7.23",
+  },
+]
+
+// ============================================================
+// CERTIFICATIONS
+// ============================================================
+export const certifications = [
+  { id: 1, name: "Full Stack (MERN) Web Development", issuer: "Maiyyam", year: "2024" },
+  { id: 2, name: "Python for Everybody", issuer: "Coursera", year: "2025" },
+  { id: 3, name: "Python Data Structures", issuer: "Coursera", year: "2025" },
+  { id: 4, name: "Foundations of Cybersecurity", issuer: "Coursera", year: "2025" },
+  { id: 5, name: "6G Deployment", issuer: "Coursera", year: "2025" },
+  { id: 6, name: "Introduction to Packet Tracer", issuer: "Cisco", year: "2024" },
+]
