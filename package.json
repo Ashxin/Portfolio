@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "framer-motion": "^12.38.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
-    "react-scroll": "^1.9.3"
+    "react-scroll": "^1.9.3",
+    "typewriter-effect": "^2.22.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
