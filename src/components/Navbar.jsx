@@ -45,7 +45,7 @@ export default function Navbar() {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 py-4
         ${
           scrolled
-            ? "bg-gotham-dark/80 backdrop-blur-md shadow-lg shadow-gotham-purple/10"
+            ? "bg-gotham-bg/80 backdrop-blur-md shadow-lg shadow-gotham-purple/10"
             : "bg-transparent"
         }`}
     >
@@ -120,7 +120,7 @@ export default function Navbar() {
       {/* Conditionally rendered — only exists in the DOM when menuOpen is true */}
       {menuOpen && (
         <div className="md:hidden mt-4 pb-4 flex flex-col gap-4 px-6
-                        bg-gotham-dark/90 backdrop-blur-md">
+                        bg-gotham-bg/90 backdrop-blur-md">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.to}

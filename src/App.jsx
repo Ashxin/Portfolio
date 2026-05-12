@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
-    <div className="bg-gotham-dark min-h-screen text-white">
+    <div className="bg-gotham-bg min-h-screen text-white">
 
       <Navbar />
 
