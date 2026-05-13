@@ -129,16 +129,15 @@ export const projects = [
 export const about = {
   name: "Aswin Kumar B",
   bio: [
-    "I'm a full-stack developer and AI engineer who builds things that actually work — not just things that demo well.",
-    "I focus on the intersection of automation, intelligent systems, and real hardware. If it involves making machines smarter or workflows faster, I'm in.",
-    "Currently deep in AI agents, IoT pipelines, and making complex systems feel simple to use.",
+    "ECE undergrad at Kumaraguru College of Technology, graduating May 2026. Self-taught everything that actually matters — full-stack web, AI automation, and IoT systems — outside of class.",
+    "I build things that solve real problems for real businesses. My current focus is WhatsApp automation for small manufacturers in Tamil Nadu who are drowning in manual communication loops.",
+    "Not waiting to graduate to start. Already shipped production-grade AI pipelines, edge ML on Raspberry Pi, and end-to-end automation systems.",
   ],
-  // Replace 'profile.jpg' with your actual image filename inside src/assets/
   image: "/src/assets/profile.jpg",
   stats: [
-    { label: "Projects Shipped", value: "10+" },
-    { label: "Technologies", value: "20+" },
-    { label: "Domains", value: "4" },
+    { label: "Projects Shipped", value: "6+" },
+    { label: "Technologies", value: "15+" },
+    { label: "Graduating", value: "2026" },
   ],
 };
 
@@ -235,14 +234,40 @@ export const education = [
   },
 ]
 
-// ============================================================
-// CERTIFICATIONS
-// ============================================================
+// ─── TIMELINE ─────────────────────────────────────────────────────────────────
+export const timeline = [
+  {
+    id: "exp1",
+    type: "work",
+    role: "Web Development Intern",
+    org: "Codsoft",
+    period: "June 2025 — July 2025",
+    bullets: [
+      "Built a Marvel-themed responsive landing page using HTML5 and CSS3",
+      "Developed a personal portfolio website with smooth navigation and project showcase",
+      "Implemented a browser-based calculator in JavaScript with arithmetic operations and keyboard input",
+    ],
+  },
+  {
+    id: "edu1",
+    type: "education",
+    role: "B.E. Electronics and Communication Engineering",
+    org: "Kumaraguru College of Technology",
+    period: "Nov 2022 — May 2026",
+    bullets: [
+      "CGPA: 7.23",
+      "Self-taught full-stack web development, AI automation, and IoT systems alongside coursework",
+      "Built 6+ projects spanning web, AI pipelines, and edge hardware during degree",
+    ],
+  },
+];
+
+// ─── CERTIFICATIONS ───────────────────────────────────────────────────────────
 export const certifications = [
-  { id: 1, name: "Full Stack (MERN) Web Development", issuer: "Maiyyam", year: "2024" },
-  { id: 2, name: "Python for Everybody", issuer: "Coursera", year: "2025" },
-  { id: 3, name: "Python Data Structures", issuer: "Coursera", year: "2025" },
-  { id: 4, name: "Foundations of Cybersecurity", issuer: "Coursera", year: "2025" },
-  { id: 5, name: "6G Deployment", issuer: "Coursera", year: "2025" },
-  { id: 6, name: "Introduction to Packet Tracer", issuer: "Cisco", year: "2024" },
-]
+  { id: "cert1", name: "Full Stack (MERN) Web Development Traineeship", issuer: "Maiyyam",                    year: "2024" },
+  { id: "cert2", name: "Python for Everybody",                           issuer: "Coursera",                   year: "2025" },
+  { id: "cert3", name: "Python Data Structures",                         issuer: "Coursera",                   year: "2025" },
+  { id: "cert4", name: "Foundations of Cybersecurity",                   issuer: "Coursera",                   year: "2025" },
+  { id: "cert5", name: "6G Deployment",                                  issuer: "Coursera",                   year: "2025" },
+  { id: "cert6", name: "Introduction to Packet Tracer",                  issuer: "Cisco Networking Academy",   year: "2024" },
+];
