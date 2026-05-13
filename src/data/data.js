@@ -271,3 +271,10 @@ export const certifications = [
   { id: "cert5", name: "6G Deployment",                                  issuer: "Coursera",                   year: "2025" },
   { id: "cert6", name: "Introduction to Packet Tracer",                  issuer: "Cisco Networking Academy",   year: "2024" },
 ];
+// ─── CONTACT ──────────────────────────────────────────────────────────────────
+export const contact = {
+  email: "ashwinbta01@gmail.com",
+  github: "https://github.com/Ashxin",
+  linkedin: "https://linkedin.com/in/aswinkumar0b1",
+  phone: "+91 9361543378",
+};
