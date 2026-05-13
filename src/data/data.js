@@ -125,6 +125,56 @@ export const projects = [
   },
 ]
 
+// ─── ABOUT ───────────────────────────────────────────────────────────────────
+export const about = {
+  name: "Aswin Kumar B",
+  bio: [
+    "I'm a full-stack developer and AI engineer who builds things that actually work — not just things that demo well.",
+    "I focus on the intersection of automation, intelligent systems, and real hardware. If it involves making machines smarter or workflows faster, I'm in.",
+    "Currently deep in AI agents, IoT pipelines, and making complex systems feel simple to use.",
+  ],
+  // Replace 'profile.jpg' with your actual image filename inside src/assets/
+  image: "/src/assets/profile.jpg",
+  stats: [
+    { label: "Projects Shipped", value: "10+" },
+    { label: "Technologies", value: "20+" },
+    { label: "Domains", value: "4" },
+  ],
+};
+
+// ─── SKILLS ──────────────────────────────────────────────────────────────────
+// Each category maps to one domain card in the Skills section.
+export const skillCategories = [
+  {
+    id: "web",
+    domain: "Web & Full Stack",
+    icon: "⚡",
+    color: "from-gotham-purple/20 to-transparent",
+    skills: ["React", "Node.js", "Express", "Tailwind CSS", "PostgreSQL", "MongoDB", "REST APIs"],
+  },
+  {
+    id: "ai",
+    domain: "AI & Automation",
+    icon: "🤖",
+    color: "from-blue-500/20 to-transparent",
+    skills: ["Python", "LangChain", "Ollama", "Groq", "n8n", "RAG Pipelines", "Prompt Engineering"],
+  },
+  {
+    id: "infra",
+    domain: "Infra & DevOps",
+    icon: "🛠️",
+    color: "from-green-500/20 to-transparent",
+    skills: ["Docker", "Linux", "Git", "Vercel", "Nginx", "CI/CD", "SSH"],
+  },
+  {
+    id: "hardware",
+    domain: "Hardware & IoT",
+    icon: "🔌",
+    color: "from-orange-500/20 to-transparent",
+    skills: ["Arduino", "Raspberry Pi", "MQTT", "Sensor Integration", "Serial Comm", "Edge Computing"],
+  },
+];
+
 // ============================================================
 // SKILLS
 // ============================================================

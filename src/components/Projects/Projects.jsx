@@ -6,7 +6,7 @@
 
 import { motion } from "framer-motion";
 import { projects } from "../../data/data";
-import ProjectCard from "../ProjectCard";
+import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   // Array.filter() splits one array into two based on a condition.
