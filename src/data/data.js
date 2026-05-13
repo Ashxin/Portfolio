@@ -91,6 +91,38 @@ export const projects = [
     live: null,
     hero: false,
   },
+  {
+  id: 5,
+  title: "RAG Product Catalogue Bot",
+  tagline: "WhatsApp bot that answers from your own data, not guesswork",
+  description:
+    "Built a RAG pipeline using n8n, Ollama embeddings, and Groq. Indexed a school accessories product catalogue into a vector store. Deployed via Twilio WhatsApp — school owners query live pricing, variants, and MOQs instantly.",
+  metrics: [
+    { label: "Retrieval", value: "Vector Search" },
+    { label: "Embedding", value: "nomic-embed-text" },
+    { label: "Interface", value: "WhatsApp" },
+  ],
+  tech: ["n8n", "Ollama", "Groq API", "Twilio", "Docker"],
+  github: null,
+  live: null,
+  hero: false,
+},
+{
+  id: 6,
+  title: "Multi-Step AI Agent",
+  tagline: "One agent that reads email, schedules meetings, and logs tasks",
+  description:
+    "Chained Gmail, Google Calendar, and Notion into a single Groq-powered agent. One message like 'schedule client review tomorrow and log a follow-up task' triggers all three tools in sequence automatically.",
+  metrics: [
+    { label: "Tools chained", value: "3 live APIs" },
+    { label: "Model", value: "Llama 3.3 70B" },
+    { label: "Orchestration", value: "n8n + Groq" },
+  ],
+  tech: ["n8n", "Groq API", "Gmail API", "Google Calendar", "Notion"],
+  github: null,
+  live: null,
+  hero: false,
+  },
 ]
 
 // ============================================================
