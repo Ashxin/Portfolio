@@ -5,6 +5,7 @@
 
 import { motion } from "framer-motion";
 import { about } from "../data/data";
+import profileImg from "../assets/profile.jpg";
 
 // ─── Animation Variants ───────────────────────────────────────────────────────
 // Same variant pattern from Phase 4 — reused here on scroll instead of mount.
@@ -50,7 +51,7 @@ export default function About() {
             {/* Purple glow ring behind the image */}
             <div className="absolute inset-0 rounded-2xl bg-gotham-purple/30 blur-xl scale-105" />
             <img
-              src={about.image}
+              src={profileImg}
               alt={`${about.name} profile photo`}
               // If your image file doesn't exist yet, this will show a broken image.
               // Add your photo to src/assets/ first.
